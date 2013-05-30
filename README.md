@@ -25,6 +25,8 @@ The only thing you would want to check is LevelXX.java inside 'WebSocketServer/s
 Compile and run
 ==========
 
+I don't know why you would want to run the server, but just in case you are curious you can achieve that by doing:
+
 ```bash 
 $ cd WebSocketServer
 $ ant
