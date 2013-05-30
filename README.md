@@ -11,7 +11,7 @@ Magic Wand
 
 <img src="https://raw.github.com/Kicksend/Initiative/master/Resources/hand0.png" alt="0" width="500" />
 <img src="https://raw.github.com/Kicksend/Initiative/master/Resources/hand1.png" alt="1" width="500" />
-<img src="https://raw.github.com/Kicksend/Initiative/master/Resources/handcancel.png" alt="Cancel" height="470" />
+<img src="https://raw.github.com/Kicksend/Initiative/master/Resources/handbackspace.png" alt="Cancel" height="470" />
 <img src="https://raw.github.com/Kicksend/Initiative/master/Resources/handsend.png" alt="Send" height="470" />
 
 You can participate by dropping by <a href="http://goo.gl/maps/BnhrW">Kicksend's headquarters</a>. Don't worry, you don't have to talk with us if you don't want. You can participate from the outside.
