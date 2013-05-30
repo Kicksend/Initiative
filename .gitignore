@@ -1,0 +1,12 @@
+WebSocketServer/build/*
+WebSocketServer/dist/*
+Resources/*.psd
+Resources/*.key
+Level4.java
+
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
