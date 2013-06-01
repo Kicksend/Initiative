@@ -11,7 +11,7 @@ public class Level3 extends Level
     String result = Level3.bf(content);
     if (result.equals("Initiative" + userID))
     {
-      MainActivity.storage[userID] = content;
+      MainActivity.storage.put(userID, content);
       return (int)Math.pow(3, 2);
     }
 

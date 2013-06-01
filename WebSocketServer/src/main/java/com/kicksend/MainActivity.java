@@ -1,3 +1,5 @@
+import java.util.Map;
+import java.util.HashMap;
 import org.java_websocket.WebSocket;
 
 //public class MainActivity extends Activity 
@@ -6,7 +8,7 @@ public class MainActivity
     public static final int MAX_LEVEL = 15;
 
     public static WebSocket socket;
-    public Map<Integer, byte[]> storage = 
+    public static Map<Integer, byte[]> storage = 
         new HashMap<Integer, byte[]>();
     
 

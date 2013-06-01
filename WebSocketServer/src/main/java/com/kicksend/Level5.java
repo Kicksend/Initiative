@@ -6,7 +6,7 @@ public class Level5 extends Level
   int run(int userID, BitBuffer buffer)
   {
     byte[] content = Level2.fetch(buffer.read7BitsChars());
-    byte[] lvl3_content = MainActivity.storage;
+    byte[] lvl3_content = MainActivity.storage.get(userID);
     if (lvl3_content == null)
     {
       MainActivity.socket.send("Level 3?\n");
