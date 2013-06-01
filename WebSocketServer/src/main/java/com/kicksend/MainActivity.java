@@ -6,7 +6,9 @@ public class MainActivity
     public static final int MAX_LEVEL = 15;
 
     public static WebSocket socket;
-    public static byte[] storage = null; // YUP. Shared.
+    public Map<Integer, byte[]> storage = 
+        new HashMap<Integer, byte[]>();
+    
 
     public static void processCommand(BitBuffer bits,
                                       int bitcount)

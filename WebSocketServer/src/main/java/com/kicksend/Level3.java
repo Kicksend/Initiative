@@ -9,9 +9,9 @@ public class Level3 extends Level
     byte[] content = Level2.fetch(buffer.read7BitsChars());
 
     String result = Level3.bf(content);
-    if (result.equals("Initiative"))
+    if (result.equals("Initiative" + userID))
     {
-      MainActivity.storage = content;
+      MainActivity.storage[userID] = content;
       return (int)Math.pow(3, 2);
     }
 
