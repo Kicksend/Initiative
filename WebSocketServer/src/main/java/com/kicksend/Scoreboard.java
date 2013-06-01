@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class Scoreboard
@@ -18,6 +19,27 @@ public class Scoreboard
         Scoreboard sb = Scoreboard.getInstance();
         Integer[] userScores = sb.scoreboard.get(userID);
         userScores[level] = score;
+    }
+
+    public void ranking()
+    {
+        Iterator it = this.scoreboard.entrySet().iterator();
+        while (it.hasNext()) 
+        {
+            Map.Entry pairs = (Map.Entry)it.next();
+            Integer[] scores = (Integer[])pairs.getValue();
+            Integer userID = (Integer)pairs.getKey();
+            String nickname = this.getUser((int)userID);
+            int sum = 0;
+            for (int i = 0; i < scores.length; i++)
+            {
+                if (scores[i] != null)
+                    sum += (int)scores[i];
+            }
+            
+            MainActivity.socket.send(nickname + ": " + sum);
+            it.remove();
+        }
     }
 
     public static String getUser(int userID)

@@ -14,6 +14,8 @@ import org.java_websocket.server.WebSocketServer;
  */
 public class WebServer extends WebSocketServer 
 {
+    private static String SCOREBOARD_COMMAND = "scores";
+
     public WebServer(int port) throws UnknownHostException 
     {
         super(new InetSocketAddress(port));
@@ -35,6 +37,9 @@ public class WebServer extends WebSocketServer
     @Override
     public void onMessage(WebSocket conn, String message) 
     {
+        if (message.equals(SCOREBOARD_COMMAND))
+            Scoreboard.getInstance().ranking();
+
         BitSet bs = new BitSet(2048);
         BitBuffer bits = new BitBuffer(bs);
         bits.set(message);
