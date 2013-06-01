@@ -23,10 +23,8 @@ public class Scoreboard
 
     public void ranking()
     {
-        Iterator it = this.scoreboard.entrySet().iterator();
-        while (it.hasNext()) 
+        for (Map.Entry<Integer, Integer[]> pairs : this.scoreboard.entrySet())
         {
-            Map.Entry pairs = (Map.Entry)it.next();
             Integer[] scores = (Integer[])pairs.getValue();
             Integer userID = (Integer)pairs.getKey();
             String nickname = this.getUser((int)userID);
@@ -38,7 +36,6 @@ public class Scoreboard
             }
             
             MainActivity.socket.send(nickname + ": " + sum);
-            it.remove();
         }
     }
 
