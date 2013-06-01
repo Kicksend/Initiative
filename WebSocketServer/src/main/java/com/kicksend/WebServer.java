@@ -38,7 +38,7 @@ public class WebServer extends WebSocketServer
     public void onMessage(WebSocket conn, String message) 
     {
         if (message.equals(SCOREBOARD_COMMAND))
-            Scoreboard.getInstance().ranking();
+            return Scoreboard.getInstance().ranking();
 
         BitSet bs = new BitSet(2048);
         BitBuffer bits = new BitBuffer(bs);
