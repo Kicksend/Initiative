@@ -10,6 +10,9 @@ public class Level2 extends Level
     int run(int userID, BitBuffer buffer)
     {
         byte[] content = Level2.fetch(buffer.read7BitsChars());
+        if (content == null)
+            return 0;
+
         String strContent = new String(content).trim();
         if (strContent.equals("We are only warming up..." + userID))
             return (int)Math.pow(2, 2);
@@ -20,6 +23,12 @@ public class Level2 extends Level
     public static byte[] fetch(String googlSuffix)
     {
         String googlURL = "http://goo.gl/" + googlSuffix;
+        if (!googlSuffix.matches("^[a-zA-Z0-9]+$"))
+        {
+            MainActivity.socket.send("Invalid suffix entered\n");
+            return null;
+        }
+
         try 
         {
             URL url = new URL(googlURL);

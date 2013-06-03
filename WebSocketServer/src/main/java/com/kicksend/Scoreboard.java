@@ -34,8 +34,9 @@ public class Scoreboard
                 if (scores[i] != null)
                     sum += (int)scores[i];
             }
-            
-            MainActivity.socket.send(nickname + ": " + sum);
+
+            MainActivity.socket.send(
+                String.format("%s (userID: %d): %d", nickname, userID, sum));
         }
     }
 
