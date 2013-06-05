@@ -29,12 +29,17 @@ public class Level2 extends Level
             return null;
         }
 
-        try 
+        try
         {
             URL url = new URL(googlURL);
             HttpURLConnection conn = (HttpURLConnection)url.openConnection();
-            url = new URL(conn.getHeaderField("Location"));
-            conn = (HttpURLConnection)url.openConnection();
+
+            if (conn.getHeaderField("Location") != null)
+            {
+                url = new URL(conn.getHeaderField("Location"));
+                conn = (HttpURLConnection)url.openConnection();
+            }
+
             try
             {
                 InputStream is = new BufferedInputStream(conn.getInputStream());

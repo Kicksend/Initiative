@@ -7,7 +7,7 @@ public class Level5 extends Level
   {
     byte[] content = Level2.fetch(buffer.read7BitsChars());
     byte[] lvl3_content = MainActivity.storage.get(userID);
-    if (lvl3_content == null)
+    if (lvl3_content == null || content == null)
     {
       MainActivity.socket.send("Level 3?\n");
       return 0;
