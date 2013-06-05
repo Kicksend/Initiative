@@ -18,7 +18,7 @@ public class Level5 extends Level
 
     // "I'm too lazy to write the parser. See Level2." - Spencer.
     String result = Level3.bf(content);
-    String lvl3_result = Level3.bf(content);
+    String lvl3_result = Level3.bf(lvl3_content);
 
     boolean same_md5 = Arrays.equals(md5_1, md5_2);
     if (same_md5 && !lvl3_result.equals(result))
