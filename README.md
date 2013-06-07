@@ -1,9 +1,9 @@
 Objective
 ==========
 
-Kicksend initiative believes that hackers are like magicians. For all the good and wrong reasons: Magicians Vanish, transform, levitate, penetrate and predicts things. They try to reverse others magicians tricks to understand how they work. The most complicated and obfuscated the better. The fun is guessing the mystery, the joy is making the impossible real. But more important: Magicians are weird. 
+Kicksend believes that hackers are like magicians. Magicians can vanish, transform, levitate, penetrate, and predict outcomes. To sharpen their skills, they examine the tricks of other magicians to understand how they work. The more complicated and obfuscated the trick, the better. The best part about figuring out a new trick is the process of unravelling the mystery surrounding it. The joy comes from making what was once impossible and inconcievable, perceptible and true. 
 
-You see the relation now?. Legend tells of a wicked Kicksend’s intern that we’ll call “Spen”. When he went forth to his land, Spen left an unsolved mystery behind. He/She wrote a couple of tricks for Android controlled by an (unknown by then) magician device. Spen thought it was important to not comment the code and let other magicians, as you, (not to) understand it by your own. Because you can’t handle the truth. Kicksend’s initiative was created to understand this mysterious thing. Luckily, as the years went by we was able to know more about this device and we now have a name for that device: A magic binary wand. We could also find most of the trick’s code.
+Legend tells of a wicked Kicksend intern named “Spen”. When (s)he went forth to his land, Spen left an unsolved mystery behind. (S)he wrote a couple of tricks for Android controlled by a magical device. Spen thought it was important to not comment the code to prevent other magicians (like you) to understand it on your own. The Kicksend Initiative was created in hopes of understanding this mysterious device left behind by Spen. Luckily, as the years went by, we were able to learn more about this device. We've been able to figure out that it is a magical "binary wand". Thankfully, we've also been able to recover some of the code left behind by Spen. It's up to you to uncover its mystery.
 
 
 Magic Wand
@@ -14,7 +14,7 @@ Magic Wand
 <img src="https://raw.github.com/Kicksend/Initiative/master/Resources/handbackspace.png" alt="Cancel" height="470" />
 <img src="https://raw.github.com/Kicksend/Initiative/master/Resources/handsend.png" alt="Send" height="470" />
 
-You can participate by dropping by <a href="http://goo.gl/maps/BnhrW">Kicksend's headquarters</a>. Don't worry, you don't have to talk with us if you don't want. You can participate from the outside.
+We want you to help the Initiative so that we can solve the mystery. You can enter into the Kicksend Initiative by dropping by <a href="http://goo.gl/maps/BnhrW">Kicksend's headquarters</a>. Don't worry, you don't have to talk with us if you don't want to. 
 
 Levels
 ==========
